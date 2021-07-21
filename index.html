@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>
+        Family photo
+    </title>
+</head>
+<body>
+    <image src="https://tse3.mm.bing.net/th?id=OIP.CEDxRu45fgxOjcOLx6cpkAHaFj&pid=Api&P=0&w=237&h=178"
+    style="width: 30%;" id="family_member_image"></image>
+    <h4 id="family_memeber_name">My Family</h4>
+    <button onclick="update();">Next</button>
+    <script>
+    var images =
+    [https://clipartart.com/images/b-ack-dad-clipart-4.jpg,
+    https://www.clipartkey.com/mpngs/m/94-941941_mother-cartoon-drawing-drawing-of-a-mom.png,
+    https://www.jing.fm/clipimg/detail/18-182778_black-sisters-clipart-clip-art-black-sister.png,
+    https://i.pinimg.com/originals/5c/ba/81/5cba81da1ad7b405bd9645d8343adfa4.jpg,]
+
+    var names = ["farther",
+    "mother",
+    "sister",
+    "brother",];
+
+    var i = 0;
+    function update()
+    {
+        i++;
+        var numbers_of_family_member_in_arrawy = 5
+        if(i > number_of_family_member_in_array)
+        {
+            i = 0;
+        }
+    
+    var updateImage = image[i];
+    var updateName = name[i];
+    document.getElementById("family_member_name").src = updateImage;
+    document.getElementById("family_member_name").innerHTML = updateName;
+}
+</body>
+</html>
